@@ -12,6 +12,12 @@ struct ContentView: View {
         VStack {
             VStack {
                 Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
+                    .bold()
+                    .kerning(2.0)
+                    .multilineTextAlignment(.center)
+                    .lineSpacing(4)
+                    .font(.footnote)
+
                 Text("89")
             }
             HStack {
@@ -30,6 +36,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
+            ContentView()
+                .previewLayout(.fixed(width: 568, height: 320
+                ))
         }
     }
 }
