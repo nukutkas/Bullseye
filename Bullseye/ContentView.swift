@@ -45,7 +45,6 @@ struct ContentView: View {
                 return Alert(title: Text("Hello, there!"), message: Text("This is my first pop-up"), dismissButton: .default(Text("Awesome!")))
             })
             Button(action: {
-                print("Hello")
                 self.whosThereIsVisible = true
             }) {
                 Text("Knock Knock")
