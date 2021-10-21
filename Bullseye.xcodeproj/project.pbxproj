@@ -46,6 +46,7 @@
 		E584D90B272190D10054D96A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E59F38BF2719712800E47AA8 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -54,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				E59F38BD2719712800E47AA8 /* BullseyeApp.swift */,
-				E59F38BF2719712800E47AA8 /* ContentView.swift */,
 				E59F38C12719712900E47AA8 /* Assets.xcassets */,
 				E59F38C62719712900E47AA8 /* Info.plist */,
 			);
