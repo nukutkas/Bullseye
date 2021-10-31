@@ -22,7 +22,7 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)
                     .lineSpacing(4)
                     .font(.footnote)
-
+                
                 Text(String(game.target))
                     .kerning(-1.0)
                     .font(.largeTitle)
@@ -42,6 +42,10 @@ struct ContentView: View {
             }) {
                 Text("Hit me")
             }
+            .padding(20.0)
+            .background(Color.blue)
+            .foregroundColor(Color.white)
+            .cornerRadius(21)
             .alert(isPresented: $alertIsVisible, content: {
                 let roundedValue = Int(sliderValue.rounded())
                 return Alert(title: Text("Hello, there!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \( game.points(sliderValue: roundedValue)) points this round"), dismissButton: .default(Text("Awesome!")))
