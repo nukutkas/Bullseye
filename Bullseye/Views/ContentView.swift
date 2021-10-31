@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack {
-                Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU CAN TO")
+                Text("🎯🎯🎯\nPut the Bullseeye as close as you can to".uppercased())
                     .bold()
                     .kerning(2.0)
                     .multilineTextAlignment(.center)
@@ -40,7 +40,9 @@ struct ContentView: View {
                 print("Hello, SwiftUI")
                 alertIsVisible = true
             }) {
-                Text("Hit me")
+                Text("Hit me".uppercased())
+                    .bold()
+                    .font(.title3)
             }
             .padding(20.0)
             .background(Color.blue)
