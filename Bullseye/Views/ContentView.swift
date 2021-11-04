@@ -47,7 +47,7 @@ struct ContentView: View {
                         .font(.title3)
                 }
                 .padding(20.0)
-                .background(Color.blue)
+                .background(Color("ButtonColor"))
                 .foregroundColor(Color.white)
                 .cornerRadius(21.0)
                 .alert(isPresented: $alertIsVisible, content: {
