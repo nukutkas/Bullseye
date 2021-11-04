@@ -21,11 +21,7 @@ struct ContentView: View {
                 InstructionText(text: "🎯🎯🎯\nPut the Bullseye as close as you can to")
                     .padding(.leading, 30.0)
                     .padding(.trailing, 30.0)
-                Text(String(game.target))
-                    .kerning(-1.0)
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-                    .foregroundColor(Color("TextColor"))
+                BigNumberText(text: String(game.target))
                 HStack {
                     Text("1")
                         .bold()

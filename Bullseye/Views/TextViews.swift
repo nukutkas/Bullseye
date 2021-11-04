@@ -20,9 +20,23 @@ struct InstructionText: View {
             .foregroundColor(Color("TextColor"))
     }
 }
+struct BigNumberText: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .kerning(-1.0)
+            .font(.largeTitle)
+            .fontWeight(.black)
+            .foregroundColor(Color("TextColor"))
+    }
+}
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
-        InstructionText(text: "Instructions")
+        VStack {
+            InstructionText(text: "Instructions")
+            BigNumberText(text: "999")
+        }
     }
 }
