@@ -13,6 +13,8 @@ struct BackgroundView: View {
     var body: some View {
         VStack {
             TopView(game: $game)
+            Spacer()
+            BottomView(game: $game)
         }
         .padding()
         .background(
