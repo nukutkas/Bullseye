@@ -22,7 +22,6 @@ struct PointsView: View {
             .background(Color("BackgroundColor"))
             .cornerRadius(21.0)
             .shadow(radius: 10, x: 5, y: 5)
-        
     }
 }
 
