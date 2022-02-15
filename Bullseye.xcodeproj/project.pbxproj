@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E56E490F27BC3B410029B763 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56E490E27BC3B410029B763 /* PointsView.swift */; };
 		E584D90E272191A60054D96A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584D90D272191A60054D96A /* Game.swift */; };
 		E584D91627219B820054D96A /* BullseyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584D91527219B820054D96A /* BullseyeTests.swift */; };
 		E59979B7273416C900BE2CCE /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59979B6273416C900BE2CCE /* TextViews.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E56E490E27BC3B410029B763 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		E584D90D272191A60054D96A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E584D91327219B820054D96A /* BullseyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullseyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E584D91527219B820054D96A /* BullseyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullseyeTests.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				E59979BC27342DF300BE2CCE /* Shapes.swift */,
 				E59B715C27354728002B0D56 /* RoundViews.swift */,
 				E59B715E273556A4002B0D56 /* BackgroundView.swift */,
+				E56E490E27BC3B410029B763 /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				E59F38C02719712800E47AA8 /* ContentView.swift in Sources */,
 				E59979B7273416C900BE2CCE /* TextViews.swift in Sources */,
 				E59979BD27342DF400BE2CCE /* Shapes.swift in Sources */,
+				E56E490F27BC3B410029B763 /* PointsView.swift in Sources */,
 				E59B715F273556A4002B0D56 /* BackgroundView.swift in Sources */,
 				E584D90E272191A60054D96A /* Game.swift in Sources */,
 				E59F38BE2719712800E47AA8 /* BullseyeApp.swift in Sources */,
