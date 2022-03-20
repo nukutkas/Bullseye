@@ -62,7 +62,7 @@ struct HitMeButton: View {
     @Binding var sliderValue: Double
     @Binding var game: Game
     
-    var body: some View {
+    var body: some View { 
         HStack {
             Button(action: {
                 alertIsVisible = true

@@ -8,20 +8,30 @@
 import SwiftUI
 
 struct Shapes: View {
+    
+     @State private var wideShapes = true
+    
     var body: some View {
         VStack {
-            Circle()
-                //.fill(Color.blue)
-                .strokeBorder(Color.blue, lineWidth: 20.0)
-                .frame(width: 200.0, height: 100)
+            if !wideShapes {
+                Circle()
+                    .strokeBorder(Color.blue, lineWidth: 20.0)
+                    .frame(width: 200, height: 100.0)
+            }
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.blue)
+                .frame(width: wideShapes ? 200 : 100, height: 100)
             Capsule()
+                .fill(Color.blue)
+                .frame(width: wideShapes ? 200 : 100, height: 100)
             Ellipse()
-            
+                .fill(Color.blue)
+                .frame(width: wideShapes ? 200 : 100, height: 100)
+            Button("Animate") {
+                wideShapes.toggle()
+            }
         }
         .background(Color.green)
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
