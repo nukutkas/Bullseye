@@ -17,6 +17,7 @@ struct Shapes: View {
                 Circle()
                     .strokeBorder(Color.blue, lineWidth: 20.0)
                     .frame(width: 200, height: 100.0)
+                    .transition(.opacity)
             }
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color.blue)
@@ -28,7 +29,9 @@ struct Shapes: View {
                 .fill(Color.blue)
                 .frame(width: wideShapes ? 200 : 100, height: 100)
             Button("Animate") {
-                wideShapes.toggle()
+                withAnimation {
+                    wideShapes.toggle()
+                }
             }
         }
         .background(Color.green)

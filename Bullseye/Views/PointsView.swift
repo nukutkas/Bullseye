@@ -22,17 +22,20 @@ struct PointsView: View {
             BigNumberText(text: String(roundedValue))
             BodyText(text: "You scored \(points) Points\n🎉🎉🎉")
             Button(action: {
-                alertIsVisible = false
+                withAnimation {
+                    alertIsVisible = false
+                }
                 game.startNewRound(points: points)
             }) {
                 ButtonText(text: "Start New Round")
             }
         }
-            .padding()
-            .frame(maxWidth: 300)
-            .background(Color("BackgroundColor"))
-            .cornerRadius(21.0)
-            .shadow(radius: 10, x: 5, y: 5)
+        .padding()
+        .frame(maxWidth: 300)
+        .background(Color("BackgroundColor"))
+        .cornerRadius(21.0)
+        .shadow(radius: 10, x: 5, y: 5)
+        .transition(.scale)
     }
 }
 
@@ -46,12 +49,12 @@ struct PointsView_Previews: PreviewProvider {
         PointsView(alertIsVisible: alertIsVisible, sliderValue: sliderValue, game: game)
         PointsView(alertIsVisible: alertIsVisible, sliderValue: sliderValue, game: game)
             .previewLayout(.fixed(width: 568, height: 320
-            ))
+                                 ))
         PointsView(alertIsVisible: alertIsVisible, sliderValue: sliderValue, game: game)
             .preferredColorScheme(.dark)
         PointsView(alertIsVisible: alertIsVisible, sliderValue: sliderValue, game: game)
             .preferredColorScheme(.dark)
             .previewLayout(.fixed(width: 568, height: 320
-            ))
+                                 ))
     }
 }
