@@ -18,6 +18,7 @@
 		E59F38C02719712800E47AA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59F38BF2719712800E47AA8 /* ContentView.swift */; };
 		E59F38C22719712900E47AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59F38C12719712900E47AA8 /* Assets.xcassets */; };
 		E59F38C52719712900E47AA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59F38C42719712900E47AA8 /* Preview Assets.xcassets */; };
+		E5A50D0C27E79829002A9D2E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A50D0B27E79829002A9D2E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E59F38C12719712900E47AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E59F38C42719712900E47AA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E59F38C62719712900E47AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5A50D0B27E79829002A9D2E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				E584D90D272191A60054D96A /* Game.swift */,
+				E5A50D0B27E79829002A9D2E /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				E56E490F27BC3B410029B763 /* PointsView.swift in Sources */,
 				E59B715F273556A4002B0D56 /* BackgroundView.swift in Sources */,
 				E584D90E272191A60054D96A /* Game.swift in Sources */,
+				E5A50D0C27E79829002A9D2E /* Constants.swift in Sources */,
 				E59F38BE2719712800E47AA8 /* BullseyeApp.swift in Sources */,
 				E59B715D27354728002B0D56 /* RoundViews.swift in Sources */,
 			);

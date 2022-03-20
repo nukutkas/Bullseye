@@ -17,7 +17,7 @@ struct RoundedImageViewStroked: View {
             .frame(width: 56.0, height: 56.0)
             .overlay(
                 Circle()
-                    .strokeBorder(Color("ButtonStrokeColor"), lineWidth: 2)
+                    .strokeBorder(Color("ButtonStrokeColor"), lineWidth: Constants.General.strokeWidth)
             )
     }
 }
@@ -51,7 +51,7 @@ struct RoundRectTextView: View {
             .foregroundColor(Color("TextColor"))
             .overlay(
                 RoundedRectangle(cornerRadius: 21.0)
-                    .stroke(lineWidth: 2.0)
+                    .stroke(lineWidth: Constants.General.strokeWidth)
                     .foregroundColor(Color("ButtonStrokeColor"))
             )
     }
