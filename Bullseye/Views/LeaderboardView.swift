@@ -9,7 +9,12 @@ import SwiftUI
 
 struct LeaderboardView: View {
     var body: some View {
-        RowView(index: 1, score: 10, date: Date())    }
+        VStack {
+            HeaderView()
+            RowView(index: 1, score: 10, date: Date())
+        }
+        
+    }
 }
 
 struct RowView: View {
@@ -34,6 +39,21 @@ struct RowView: View {
         .padding(.leading)
         .padding(.trailing)
         .frame(maxWidth: Constants.Leaderboard.leaderboardMaxRowWidth)
+    }
+}
+
+struct HeaderView: View {
+    var body: some View {
+        ZStack {
+            BigBoldText(text: "Leaderboard")
+            HStack {
+                Spacer()
+                Button(action: {}) {
+                    RoundedImageViewFilled(systemName: "xmark")
+                        .padding(.trailing)
+                }
+            }
+        }
     }
 }
 
