@@ -28,7 +28,7 @@ struct RowView: View {
         )
         .padding(.leading)
         .padding(.trailing)
-        .frame(maxWidth: 480.0)
+        .frame(maxWidth: Constants.Leaderboard.leaderboardMaxRowWidth)
     }
 }
 
