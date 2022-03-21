@@ -9,12 +9,15 @@ import SwiftUI
 
 struct LeaderboardView: View {
     var body: some View {
-        VStack {
-            HeaderView()
-            LabelView()
-            RowView(index: 1, score: 10, date: Date())
+        ZStack {
+            Color("BackgroundColor")
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                HeaderView()
+                LabelView()
+                RowView(index: 1, score: 10, date: Date())
+            }
         }
-        
     }
 }
 
@@ -53,6 +56,7 @@ struct HeaderView: View {
                     RoundedImageViewFilled(systemName: "xmark")
                         .padding(.trailing)
                 }
+                .buttonStyle(.plain)
             }
         }
     }
