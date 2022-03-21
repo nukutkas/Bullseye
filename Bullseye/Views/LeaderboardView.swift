@@ -22,6 +22,13 @@ struct RowView: View {
             Slider(value: .constant(50.0))
                 .padding()
         }
+        .background(
+            RoundedRectangle(cornerRadius: .infinity)
+                .strokeBorder(Color("LeaderboardRowColor"), lineWidth: Constants.General.strokeWidth)
+        )
+        .padding(.leading)
+        .padding(.trailing)
+        .frame(maxWidth: 480.0)
     }
 }
 

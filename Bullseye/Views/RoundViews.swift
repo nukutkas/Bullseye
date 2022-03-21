@@ -57,12 +57,21 @@ struct RoundRectTextView: View {
     }
 }
 
+struct RoundedTextView: View {
+    let text: String
+    
+    var body: some View {
+        Text(text)
+    }
+}
+
 struct PreviewView: View {
     var body: some View {
         VStack(spacing: 10) {
             RoundedImageViewStroked(systemName: "arrow.counterclockwise")
             RoundedImageViewFilled(systemName: "list.dash")
             RoundRectTextView(text: "100")
+            RoundedTextView(text: "1")
         }
     }
 }
